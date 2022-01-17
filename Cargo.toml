@@ -21,7 +21,7 @@ features = ["backtrace"]
 
 [dependencies.aya]
 git = "https://github.com/nimrodshn/aya"
-branch="add_map_type_lpm_trie"
+branch="add_lpm_trie"
 features = ["async_tokio"]
 
 [dependencies.pnet]

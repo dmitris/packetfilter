@@ -49,7 +49,7 @@ impl Code {
 
         let source_ip_keys = self.config.as_ipv6_trie_keys()?;
         for key in source_ip_keys.into_iter() {
-            source_ip_trie.insert(key, 1 as u32, 0)?;
+            source_ip_trie.insert(&key, 1 as u32, 0)?;
         }
 
         let events = self.bpf.map_mut("events")?;
